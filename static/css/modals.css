@@ -29,6 +29,13 @@ body {
     -webkit-box-shadow: none;
     box-shadow: black;
 }
+@media(max-width:767px) {
+  .portfolio-modal .modal-content {
+      padding: 100px 1%;
+      min-height: 100%;
+      max-width: 100%;
+  }
+}
 
 .portfolio-modal .modal-content h2 {
     margin: 0;

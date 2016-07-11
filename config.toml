@@ -32,7 +32,6 @@ theme = "hugo-creative-theme"
 
 		[params.navigation.links]
 			about     = "Sobre"
-			services  = "Services"
 			portfolio = "Quartos"
 			contact   = "Contato"
 
@@ -47,8 +46,8 @@ theme = "hugo-creative-theme"
 
 	# About section
 	[params.about]
-		headline    = "We've got what you need!"
-		description = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!"
+		headline    = "Lazuli"
+		description = "O nome se origina da pedra Lapis Lazuli, com sua coloração ultra marina."
 		buttonText  = "Get started!"
 
 
@@ -82,7 +81,7 @@ theme = "hugo-creative-theme"
         client = "Client"
         date = "Date"
         category = "Category"
-        buttonText = "Close"
+        buttonText = "Fechar"
 
     # Aside section
 	[params.aside]
