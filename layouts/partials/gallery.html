@@ -1,17 +1,15 @@
 {{ $url := (printf "images/%s" .title) }}
 {{ $folder := (printf "/static/images/%s" .title) }}
 {{ $files := readDir $folder }}
-<div id="gallery-photo">
-        <div class="row no-gutter">
-    
-  {{ range $files }}
 
+ <div class="row no-gutter">
+  {{ range $files }}
  <div class="col-lg-6 col-sm-6">
-    <a href="{{$url}}/{{.Name | urlize }}">
+    <a href="{{$url}}/{{.Name | urlize }}" class="image">
       <img class = "img-responsive lazyload"  data-src="{{$url}}/{{.Name | urlize }}">
     </a>
 </div>
   {{ end }}
 
-</div></div>
+</div>
 
