@@ -1,5 +1,5 @@
-baseurl = "https://itf.github.io/lazuli/public/"
-languageCode = "en-us"
+baseurl = "lazulimotel.com"
+languageCode = "pt-br"
 title = "Lazuli Motel"
 theme = "hugo-creative-theme"
 
@@ -19,8 +19,8 @@ theme = "hugo-creative-theme"
 
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
-	name = "Your name"
-	description = "Your description"
+	name = "Lazuli Motel"
+	description = "Lazuli Motel. Suites com temas de barco, cavernas, jipes. Banheiras de hidromassagem e de spa. "
 
 	# The path must be relative to the static folder
 	favicon = "favicon.ico"
@@ -96,4 +96,4 @@ theme = "hugo-creative-theme"
 		headline = "Entre em contato"
 		description = "Venha viver um momento especial"
 		phone = "(014) 3815-3564"
-		email = "feedback@startbootstrap.com"
+		email = "http://fb.me/lazulimotel"
