@@ -40,7 +40,7 @@ theme = "hugo-creative-theme"
 	[params.hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
 		slogan     = "Lazuli Motel"
-		subtitle   = "Avenida Marginal 100, 1950  - Jd Evelyn - Botucatu  - SP (014) 3815-3564"
+		subtitle   = "Avenida Marginal 100, 1950  - Jd Evelyn - Botucatu  - SP"
 		buttonText = ""
 
 
@@ -96,5 +96,8 @@ theme = "hugo-creative-theme"
 		headline = "Entre em contato"
 		description = "Venha viver um momento especial"
 		phone = "(014) 3815-3564"
+		phone2 = "01438153564"
 		email2= "Confira novidades em nossa página!"
 		email = "http://fb.me/lazulimotel"
+		addressLat = "-22.9225426,-48.4706202"
+		address = "Avenida Marginal 100, 1950 - Jd Evelyn - Botucatu - SP"

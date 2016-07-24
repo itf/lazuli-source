@@ -8,8 +8,8 @@
                 <p>{{ with .Site.Params.contact.description }}{{ . | markdownify }}{{ end }}</p>
             </div>
             <div class="col-lg-4 col-lg-offset-2 text-center">
-                <i class="fa fa-phone fa-3x "></i>
-                <p>{{ with .Site.Params.contact.phone }}{{ . }}{{ end }}</p>
+               <a href="tel:{{ with .Site.Params.contact.phone2 }}{{ . }}{{ end }}"> <i class="fa fa-phone fa-3x "></i></a>
+                <p><a href="tel:{{ with .Site.Params.contact.phone2 }}{{ . }}{{ end }}">{{ with .Site.Params.contact.phone }}{{ . }}{{ end }}</a></p>
             </div>
             <div class="col-lg-4 text-center">
                 <a href="{{ with .Site.Params.contact.email }}{{ . }}{{ end }}"> <i class="fa my-fa-facebook  fa-3x"> </font></a></i>
