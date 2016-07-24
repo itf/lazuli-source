@@ -4,8 +4,9 @@
         <div class="header-content-inner">
             <h1>{{ with .Site.Params.hero.slogan }}{{ . | markdownify  }}{{ end }}</h1>
             <hr>
-	    <p><a href="geo:{{ with .Site.Params.contact.addressLat}}{{ . | markdownify }}{{ end }}">{{ with .Site.Params.contact.address }}{{ . | markdownify }}{{ end }}</a></p>
-
+	    <p> <a href="geo:{{ with .Site.Params.contact.addressLat}}{{ . | markdownify }}{{ end }}"> 
+		<i class="fa fa-map-marker" aria-hidden="true"></i>
+		{{ with .Site.Params.contact.address }}{{ . | markdownify }}{{ end }}</a></p>
     <!--        <p>{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</p>-->
 	    <p><a href="tel:{{ with .Site.Params.contact.phone2 }}{{ . }}{{ end }}">{{ with .Site.Params.contact.phone }}{{ . | markdownify }}{{ end }}</a></p>
 <!--            <a href="#about" class="btn btn-primary btn-xl page-scroll">{{ with .Site.Params.hero.buttonText }}{{ . }}{{ end }}</a>-->
