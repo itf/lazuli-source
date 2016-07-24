@@ -101,3 +101,9 @@ theme = "hugo-creative-theme"
 		email = "http://fb.me/lazulimotel"
 		addressLat = "-22.9225426,-48.4706202"
 		address = "Avenida Marginal 100, 1950 -  Botucatu - SP"
+
+
+    # Aside section
+	[params.informacoes]
+		headline = "Surpreeenda-se"
+
