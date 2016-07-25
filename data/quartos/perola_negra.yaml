@@ -1,8 +1,7 @@
-modalID: perola
+modalID: perola_negra
 title: Pérola Negra
-date: 2014-07-06
 img: perola.jpg
-client: Start Bootstrap
-clientLink: "#"
-category: Web Development
 description: Banheira SPA, Cascata, Sauna, Ducha circular, Pole Dance, Teto Solar, Churrasqueira, Aquário, Frigobar, Tv e Ar
+periodo: 0
+pernoite: 0
+adicional: 0

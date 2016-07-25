@@ -1,0 +1,61 @@
+{{ "<!-- Informacoes Modals -->" | safeHTML }}
+<div class="informacoes-modal modal fade" id="informacoes_" tabindex="-1" role="dialog">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+	  <div class="modal-body">
+	    <h2>{{ with .Site.Params.informacoes.informacao_session }}{{ . }}{{ end }}</h2>
+	    <hr>
+	    {{ range $index, $element :=  $.Site.Data.informacoes.informacoes }}
+	    {{ $element | markdownify}}
+	    {{ end }}
+	    <h2> {{ with .Site.Params.informacoes.preco_session }}{{ . }}{{ end }}</h2>
+	    <hr>
+	    <img src="img/precos.jpg" class="img-responsive lazyload img-resized" alt="">
+<!--	    <table id="precos" class="table table-striped table-bordered" cellspacing="0" width="100%">
+	      <thead>
+		<tr>
+		  <th>Nome</th>
+		  <th>Período</th>
+		  <th>Pernoite</th>
+		  <th>Adicional</th>
+		</tr>
+	      </thead>
+	      <tbody>
+		{{ range .Site.Data.quartos }}
+		<tr>
+		  <td>
+		    {{if ( .img)}}
+		  <a href="#informacoes_quarto-{{ .modalID }}" class="preco-link" >
+		  {{ end }}
+		  {{.title}}
+		  {{if ( .img)}}
+		  </a>
+		  {{ end }}
+		  </td>
+		  <td>{{.periodo}}</td>
+		  <td>{{.pernoite}}</td>
+		  <td>{{.adicional}}</td>
+		</tr>
+		{{ end }}
+		
+	      </tbody>
+	    </table>-->
+            <hr class="star-primary">
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{ with $.Site.Params.portfolio.modal.buttonText }}{{.}}{{ end }}</button>
+          </div>
+	</div>
+      </div>
+    </div>
+  </div>
+</div> 
+<!-- Button trigger modal -->
+
+

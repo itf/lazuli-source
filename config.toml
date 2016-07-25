@@ -105,5 +105,6 @@ theme = "hugo-creative-theme"
 
     # Aside section
 	[params.informacoes]
-		headline = "Surpreeenda-se"
-
+		headline = "Informações e Preços"
+		informacao_session = "Informações"
+		preco_session = "Valores"

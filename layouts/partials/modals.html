@@ -1,5 +1,6 @@
 {{ "<!-- Portfolio Modals -->" | safeHTML }}
 {{ range .Site.Data.quartos }}
+{{if ( .img)}}
 <div class="portfolio-modal modal fade" id="quarto-{{ .modalID }}" tabindex="-1" role="dialog">
   <div class="modal-content">
     <div class="close-modal" data-dismiss="modal">
@@ -43,5 +44,5 @@
   </div>
 </div> 
 <!-- Button trigger modal -->
-
+{{ end }}
 {{ end }}

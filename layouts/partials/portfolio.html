@@ -3,6 +3,7 @@
     <div class="container-fluid">
         <div class="row no-gutter">
             {{ range .Site.Data.quartos }}
+	    {{if ( .img)}}
             <div class="col-lg-4 col-sm-6">
                 <a href="#quarto-{{ .modalID }}" class="portfolio-box portfolio-link" data-toggle="modal">
 		  <div class="aspect-ratio-image">
@@ -23,6 +24,7 @@
                   </div>
                 </a>
             </div>
+	    {{end}}
             {{ end }}
         </div>
     </div>
