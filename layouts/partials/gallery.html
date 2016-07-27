@@ -6,7 +6,7 @@
   {{ range $files }}
  <div class="col-lg-8 col-lg-offset-2 col-sm-6">
     <a href="{{$url}}/{{.Name | urlize }}" class="image">
-      <img class = "img-responsive lazyload"  data-src="{{$url}}/{{.Name | urlize }}">
+      <img data-sizes="auto" class = "img-responsive lazyload"  data-src="{{$url}}/{{.Name | urlize }}">
     </a>
 </div>
   {{ end }}
