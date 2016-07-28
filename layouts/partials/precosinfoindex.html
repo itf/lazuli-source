@@ -1,14 +1,12 @@
 {{ "<!-- ASIDE -->" | safeHTML }}
-<section id="informacoes_">
-  <div class="bg-dark">
-    <div class="container text-center">
-      <a href="#informacoes_" class="informacoes-link" data-toggle="modal">
-	<div class="informacoes">
-	  <i class="fa fa-info-circle fa-4x "></i>
-          <h2>{{ with .Site.Params.informacoes.headline }}{{ . }}{{ end }}</h2>
-	  <!--            <a href="{{ with .Site.Params.aside.button.link }}{{ . }}{{ end }}" class="btn btn-default btn-xl wow tada">{{ with .Site.Params.aside.button.text }}{{ . }}{{ end }}</a> -->
-	</div>
-      </a>  
-    </div>  
-  </div>
-</section>
+<aside id="informacoes_" class="bg-dark">
+  <div class="container text-center">
+    <a href="#informacoes_" class="informacoes-link" data-toggle="modal">
+      <div class="informacoes">
+	<i class="fa fa-info-circle fa-4x "></i>
+        <h2>{{ with .Site.Params.informacoes.headline }}{{ . }}{{ end }}</h2>
+	<!--            <a href="{{ with .Site.Params.aside.button.link }}{{ . }}{{ end }}" class="btn btn-default btn-xl wow tada">{{ with .Site.Params.aside.button.text }}{{ . }}{{ end }}</a> -->
+      </div>
+    </a>  
+  </div>  
+</aside>
