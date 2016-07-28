@@ -34,6 +34,7 @@ theme = "hugo-creative-theme"
 			about     = "Sobre"
 			portfolio = "Quartos"
 			contact   = "Contato"
+			informacoes = "Informações e Preços"
 
 
 	# Hero section
