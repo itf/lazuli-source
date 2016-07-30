@@ -21,7 +21,7 @@
 	    <!--<img src="img/precos.jpg" class="img-responsive lazyload img-resized" alt="">-->
 	    <table id="precos" class="table table-striped table-bordered sortable" cellspacing="0" width="100%">
 	      <thead>
-		<tr>
+		<tr class="precos">
 		  <th class="quarto-nome">Nome</th>
 		  <th class="text-left">Período</th>
 		  <th class="text-left">Pernoite</th>
@@ -30,7 +30,7 @@
 	      </thead>
 	      <tbody>
 		{{ range .Site.Data.quartos }}
-		<tr>
+		<tr class="precos">
 		  <td class="quarto-nome">
 		    {{if ( .img)}}
 		    <a href="#informacoes_quarto-{{ .modalID }}" class="preco-link" >
