@@ -2,7 +2,7 @@
 {{ range .Site.Data.quartos }}
 {{if ( .img)}}
 <div class="portfolio-modal modal fade" id="quarto-{{ .modalID }}" tabindex="-1" role="dialog">
-  <div class="modal-content">
+  <div class="modal-content" tabindex="0">
     <div class="close-modal" data-dismiss="modal">
       <div class="lr">
         <div class="rl">
