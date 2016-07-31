@@ -14,7 +14,7 @@
 	    <hr class="star-primary">
 	    <div class="gallery-photo">
 	      <a href="img/portfolio/{{ .img }}" class="image">
-                <img src="img/portfolio/{{ .img }}" class="img-responsive lazyload centered" alt="">
+                <img data-src="img/portfolio/{{ .img }}" class="img-responsive lazyload centered" alt="">
 	      </a>
 	     {{with .description}} <p>{{ . | markdownify }}</p>{{end}}
 	      <div class="row no-gutter">
