@@ -1,5 +1,5 @@
-{{ $url := (printf "fotos/%s" .title) }}
-{{ $folder := (printf "/static/fotos/%s" .title) }}
+{{ $url := (printf "fotos/%v" .title) }}
+{{ $folder := (printf "/static/fotos/%v" .title) }}
 {{ $files := readDir $folder }}
 
  <div class="row no-gutter">

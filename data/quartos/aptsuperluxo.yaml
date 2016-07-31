@@ -1,7 +1,8 @@
-modalID: aptluxo
+modalID: aptsuperluxo_
 title: Apartamentos Super Luxo
-img:
-description: Banheira de Hidromassagem, Frigobar, Tv e Ar
+img: aptsuperluxo.jpg
+description: TV, Ar, Frigobar, Cadeira Erótica, Jogo de Luzes
 periodo: 60,00
 pernoite: 140,00
 adicional: 20,00
+portfolioAptList: true

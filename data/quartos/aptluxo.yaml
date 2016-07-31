@@ -1,7 +1,8 @@
-modalID: aptluxo
+modalID: aptluxo_
 title: Apartamentos Luxo
-img:
-description: Banheira de Hidromassagem, Frigobar, Tv e Ar
+img: aptluxo.jpg
+description: 
 periodo: 50,00
 pernoite: 115,00
 adicional: 12,50
+portfolioAptList: true

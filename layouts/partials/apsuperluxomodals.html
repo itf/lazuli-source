@@ -1,0 +1,7 @@
+{{ "<!-- ApSuperLuxo Modals -->" | safeHTML }}
+{{ range .Site.Data.aptsuperluxo }}
+{{$aptsuperluxo :=  $.Site.Data.quartos.aptsuperluxo}}
+{{if (.img)}}
+{{ partial "quartomodal.html" (dict "modalID" .modalID "title" .title "description" $aptsuperluxo.description "img" .img "periodo" $aptsuperluxo.periodo "pernoite" $aptsuperluxo.pernoite "adicional" $aptsuperluxo.adicional) }}
+{{ end }}
+{{ end }}

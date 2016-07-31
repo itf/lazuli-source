@@ -16,6 +16,9 @@
 	    {{ range $index, $element :=  $.Site.Data.informacoes.informacoes }}
 	    {{ $element | markdownify}}
 	    {{ end }}
+
+	    
+
 	    <h2> {{ with .Site.Params.informacoes.preco_session }}{{ . }}{{ end }}</h2>
 	    <hr>
 	    <!--<img src="img/precos.jpg" class="img-responsive lazyload img-resized" alt="">-->
