@@ -14,7 +14,7 @@
 	  <div class="modal-body">
 	    <h2>{{ .title }}</h2>
             <hr class="star-primary">
-            <img src="img/portfolio/{{ .img }}" class="img-responsive lazyload centered" alt="">
+            <img data-src="img/portfolio/{{ .img }}" class="img-responsive lazyload centered" alt="">
 	   {{with .description}} <p>{{ . | markdownify }}</p>{{end}}
 	    <div class="row no-gutter">
 	      <div class="col-lg-10 col-lg-offset-1 col-sm-8 col-sm-offset-2">
