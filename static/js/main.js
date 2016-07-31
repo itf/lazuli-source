@@ -57,6 +57,9 @@ $('div.modal').on('hidden.bs.modal', function() {
        	}, 200);
 	 }
      });
+	var windowhash = window.location.hash;
+	ga('set', 'page',windowhash);
+	ga('send', 'pageview', windowhash );
 });
 
 
@@ -94,6 +97,7 @@ $('div.modal').on('show.bs.modal', function() {
            $(modal).find(".modal-content").focus();
         }, 200);
 	var windowhash = window.location.hash;
+	ga('set', 'page',windowhash);
 	ga('send', 'pageview', windowhash );
 });
 
