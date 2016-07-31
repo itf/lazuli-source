@@ -16,9 +16,6 @@
 	    {{ range $index, $element :=  $.Site.Data.informacoes.informacoes }}
 	    {{ $element | markdownify}}
 	    {{ end }}
-
-	    
-
 	    <h2> {{ with .Site.Params.informacoes.preco_session }}{{ . }}{{ end }}</h2>
 	    <hr>
 	    <!--<img src="img/precos.jpg" class="img-responsive lazyload img-resized" alt="">-->
@@ -51,6 +48,24 @@
 		
 	      </tbody>
 	    </table>
+
+	    	    <h2> {{ with .Site.Params.informacoes.menu_session }}{{ . }}{{ end }}</h2>
+	    {{ $url := "img/menu" }}
+	    {{ $folder := "static/img/menu" }}
+	    {{ $files := readDir $folder }}
+	    
+	    <div class="row no-gutter">
+	      {{ range $files }}
+	      <div class="col-lg-12 col-lg-offset-0 col-sm-12">
+		<img data-sizes="auto" class = "img-responsive lazyload centered"  data-src="{{$url}}/{{.Name | urlize }}">
+		
+	      </div>
+	      {{ end }}
+	      
+	    </div>
+	    
+
+
             <hr class="star-primary">
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{ with $.Site.Params.portfolio.modal.buttonText }}{{.}}{{ end }}</button>
           </div>
