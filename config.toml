@@ -20,7 +20,7 @@ theme = "hugo-creative-theme"
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
 	name = "Lazuli Motel"
-	description = "Lazuli Motel. Suites com temas de barco, cavernas, jipes. Banheiras de hidromassagem e de spa. "
+	description = "Lazuli Motel. Suites temáticas de barco, cavernas, jipes. Banheiras de hidromassagem e de spa. Churrasqueira, teto solar,  pista de dança. Incrível!"
 
 	# The path must be relative to the static folder
 	favicon = "favicon.ico"
@@ -98,6 +98,8 @@ theme = "hugo-creative-theme"
 		description = "Venha viver um momento especial"
 		phone = "(014) 3815-3564"
 		phone2 = "01438153564"
+		mobile = "(014) 99661-6868"
+		mobile2 = "14996616868"
 		email2= "Confira novidades em nossa página!"
 		email = "http://fb.me/lazulimotel"
 		addressLat = "-22.9225426,-48.4706202"
