@@ -49,7 +49,9 @@
 	      </tbody>
 	    </table>
 
-	    	    <h2> {{ with .Site.Params.informacoes.menu_session }}{{ . }}{{ end }}</h2>
+	    <h2> {{ with .Site.Params.informacoes.menu_session }}{{ . }}{{ end }}</h2>
+	    <hr>
+	    {{ with .Site.Params.informacoes.menu_session_info }}{{ . | markdownify }}{{ end }}
 	    {{ $url := "img/menu" }}
 	    {{ $folder := "static/img/menu" }}
 	    {{ $files := readDir $folder }}
