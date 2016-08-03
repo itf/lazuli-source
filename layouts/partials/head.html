@@ -7,18 +7,21 @@
 <title>{{ .Site.Title }}</title>
 {{ "<!-- Favicon -->" | safeHTML }}
 <link rel="shortcut icon" href="{{ .Site.BaseURL }}{{ .Site.Params.favicon }}">
-{{ "<!-- Bootstrap Core CSS -->" | safeHTML }}
+<!--
+
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap-cleaned.min.css" type="text/css">
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/baguetteBox.min.css" type="text/css">
-{{ "<!-- Custom Fonts -->" | safeHTML }}
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,900' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="{{ .Site.BaseURL }}font-awesome/css/font-awesome-cleaned.css" type="text/css">
-{{ "<!-- Plugin CSS -->" | safeHTML }}
-{{ "<!-- Custom CSS -->" | safeHTML }}
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/creative.css" type="text/css">
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/modals.css" type="text/css">
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/sorttable.css" type="text/css">
+-->
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/combined.css" type="text/css">
+
+{{ "<!-- Custom Fonts -->" | safeHTML }}
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,900' rel='stylesheet' type='text/css'>
+
 <noscript>
   <style>.modal{display: block; position: relative; opacity: 1;}</style>
 </noscript>
