@@ -1,3 +1,5 @@
+{{$global := .global}}
+{{with .quarto}}
 <div class="portfolio-modal modal fade" id="quarto-{{ .modalID }}" tabindex="-1" role="dialog">
   <div class="modal-content" tabindex="0">
     <div class="close-modal" data-dismiss="modal">
@@ -18,29 +20,10 @@
 	      </a>
 	     {{with .description}} <p>{{ . | markdownify }}</p>{{end}}
 	      <div class="row no-gutter">
-		<div class="col-lg-10 col-lg-offset-1 col-sm-8 col-sm-offset-2">
-		  <table  class="table table-bordered" cellspacing="0" width="100%">
-		    <thead>
-		      <tr>
-			<th class="text-left">Período</th>
-			<th class="text-left">Pernoite</th>
-			<th class="text-left">Adicional</th>
-		      </tr>
-		    </thead>
-		    <tbody>
-		      <tr>
-			<td class="text-right preco-font"><span>R$</span> {{ replace (printf "%6v" .periodo)  " "  "&nbsp;" | markdownify}}</td>
-			<td  class="text-right preco-font"><span>R$</span> {{ replace (printf "%6v" .pernoite)  " "  "&nbsp;" | markdownify}}</td>
-			<td class="text-right preco-font"><span>R$</span> {{ replace (printf "%6v" .adicional)  " "  "&nbsp;" | markdownify}}</td>
-		      </tr>
-		      
-		      
-		    </tbody>
-		  </table>
-		</div>
+		{{ partial "smalltable.html" (dict "quarto" . "global" $global)}}              
 	      </div>
 	      {{ partial "gallery.html" .}}              
-              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{ with $.Site.Params.portfolio.modal.buttonText }}{{.}}{{ end }}</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{ with $global.Site.Params.portfolio.modal.buttonText }}{{.}}{{ end }}</button>
             </div>
           </div>
 	</div>
@@ -48,4 +31,4 @@
     </div>
   </div>
 </div> 
-
+{{end}}

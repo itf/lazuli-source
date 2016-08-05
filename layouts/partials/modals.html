@@ -1,6 +1,7 @@
 {{ "<!-- Portfolio Modals -->" | safeHTML }}
+{{$Site := .Site}}
 {{ range .Site.Data.quartos }}
 {{if and ( .img)  (not (.portfolioAptList))}}
-{{ partial "quartomodal.html" . }}
+{{ partial "quartomodal.html" (dict "quarto" . "global" $) }}
 {{ end }}
 {{ end }}

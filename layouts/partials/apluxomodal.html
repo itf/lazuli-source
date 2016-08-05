@@ -17,25 +17,7 @@
             <img data-src="img/portfolio/{{ .img }}" class="img-responsive lazyload centered" alt="">
 	   {{with .description}} <p>{{ . | markdownify }}</p>{{end}}
 	    <div class="row no-gutter">
-	      <div class="col-lg-10 col-lg-offset-1 col-sm-8 col-sm-offset-2">
-		<table   class="table table-bordered" cellspacing="0" width="100%">
-		  <thead>
-		    <tr>
-		      <th class="text-left">Período</th>
-		      <th class="text-left">Pernoite</th>
-		      <th class="text-left">Adicional</th>
-		    </tr>
-		  </thead>
-		  <tbody>
-		    <tr>
-		      <td class="text-right preco-font"><span>R$</span> {{ replace (printf "%6v" .periodo)  " "  "&nbsp;" | markdownify}}</td>
-		      <td  class="text-right preco-font"><span>R$</span> {{ replace (printf "%6v" .pernoite)  " "  "&nbsp;" | markdownify}}</td>
-		      <td class="text-right preco-font"><span>R$</span> {{ replace (printf "%6v" .adicional)  " "  "&nbsp;" | markdownify}}</td>
-		    </tr>
-		  </tbody>
-		</table>
-	      </div>
-	      
+	      {{ partial "smalltable.html" (dict "quarto" . "global" $)}}              
 	      {{ range $element:= $.Site.Data.aptluxo }}
 	      {{if ( $element.img)}}
 	      <div class="col-lg-6 col-sm-6">

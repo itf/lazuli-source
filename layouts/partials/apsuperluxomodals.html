@@ -1,7 +1,8 @@
 {{ "<!-- ApSuperLuxo Modals -->" | safeHTML }}
 {{ range .Site.Data.aptsuperluxo }}
 {{$aptsuperluxo :=  $.Site.Data.quartos.aptsuperluxo}}
+{{$quarto := dict "modalID" .modalID "title" .title "description" $aptsuperluxo.description "img" .img "periodo" $aptsuperluxo.periodo "pernoite" $aptsuperluxo.pernoite "adicional" $aptsuperluxo.adicional}}
 {{if (.img)}}
-{{ partial "quartomodal.html" (dict "modalID" .modalID "title" .title "description" $aptsuperluxo.description "img" .img "periodo" $aptsuperluxo.periodo "pernoite" $aptsuperluxo.pernoite "adicional" $aptsuperluxo.adicional) }}
+{{ partial "quartomodal.html" (dict "quarto" $quarto "global" $) }}
 {{ end }}
 {{ end }}

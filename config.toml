@@ -112,4 +112,11 @@ theme = "hugo-creative-theme"
 		informacao_session = "Informações"
 		preco_session = "Valores"
 		menu_session = "Menu"
-		menu_session_info = "As refeições servem duas pessoas."
+	#tooltips
+		[params.tooltips]
+		pernoite = """23:00 as 12:00, segunda à quinta 
+01:00 às 12:00, sexta sábado e véspera de feriado"""
+		adicional = """Adicional de meia hora para o período"""
+		periodo = """4 horas, entrada entre 7:00 e 16:00 
+3 horas, entrada até 17:00.
+2 horas após 17:00."""
