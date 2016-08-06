@@ -114,9 +114,9 @@ theme = "hugo-creative-theme"
 		menu_session = "Menu"
 	#tooltips
 		[params.tooltips]
-		pernoite = """23:00 as 12:00, segunda à quinta 
-01:00 às 12:00, sexta sábado e véspera de feriado"""
+		pernoite = """23:00 às 12:00, segunda à quinta 
+01:00 às 12:00, sexta, sábado e véspera de feriado"""
 		adicional = """Adicional de meia hora para o período"""
-		periodo = """4 horas, entrada entre 7:00 e 16:00 
-3 horas, entrada até 17:00.
-2 horas após 17:00."""
+		periodo = """4 horas, entrada entre 7:00 e 16:00
+3 horas, entrada até 17:00
+2 horas após 17:00"""
