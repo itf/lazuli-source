@@ -82,7 +82,7 @@ theme = "hugo-creative-theme"
         client = "Client"
         date = "Date"
         category = "Category"
-        buttonText = "Fechar"
+        buttonText = ""
 
     # Aside section
 	[params.aside]
