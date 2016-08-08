@@ -5,6 +5,8 @@
   
   ga('create', 'UA-80847986-1', 'auto');
   ga('send', 'pageview');
+  ga('require', 'linkid');
+
   
   setTimeout("ga('send', 'event', { eventCategory: '60 seconds on page', eventAction: 'Read' })", 60000);
   
