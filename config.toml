@@ -20,7 +20,7 @@ theme = "hugo-creative-theme"
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
 	name = "Lazuli Motel"
-	description = "Lazuli Motel. Suites temáticas de barco, cavernas, jipes. Banheiras de hidromassagem e de spa. Churrasqueira, teto solar,  pista de dança. Incrível!"
+	description = "Fotos, preços e informações do Lazuli Motel - Botucatu. Suites temáticas de barco, cavernas, jipes. Banheiras de hidromassagem e de spa. Churrasqueira, teto solar,  pista de dança. Incrível!"
 
 	# The path must be relative to the static folder
 	favicon = "favicon.ico"
